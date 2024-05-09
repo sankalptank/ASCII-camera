@@ -15,7 +15,7 @@ while True:
     cls()
     frame = camera.read()
     gray_frame = cv.cvtColor(frame[1], cv.COLOR_BGR2GRAY)
-    fin = cv.resize(gray_frame,(32,32))
+    fin = cv.resize(gray_frame,(3840/2,2160/2))
     # waits .1 seconds, clears console, then convert the camera input to grayscale and 32 by 32 to make it easier to convert each pixel to an ASCII character
     for i in range(len(list(fin))):
         print('')
